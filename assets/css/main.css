@@ -2206,19 +2206,19 @@ input, select, textarea {
 			}
 
 		ul.actions.stacked {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
 			margin-left: 0;
 		}
 
 			ul.actions.stacked li {
-				padding: 1em 0 0 0;
+				padding: 0 1 0 0;
 			}
 
 				ul.actions.stacked li:first-child {
-					padding-top: 0;
+					padding-left: 0;
 				}
 
 		ul.actions.fit {
@@ -3548,9 +3548,17 @@ input, select, textarea {
 
 						}
 
-					#header nav > ul > li:first-child {
-						margin-left: 0;
+					#header nav > ul > li:last-child {
+						margin-right: 10px;
 					}
+
+					@media screen and (max-width: 736px) {
+
+							#header nav > ul {
+								object-position: center;
+							}
+
+						}
 
 		#header.alt {
 			background: transparent;
@@ -3812,12 +3820,24 @@ input, select, textarea {
 
 /* Main */
 
-	#main > header {
+	/*#main > header {
 		padding: 12em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}*/
+	#main > header  {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/CondorMaiden.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/CondorMaiden.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/CondorMaiden.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/CondorMaiden.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
