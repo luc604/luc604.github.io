@@ -3489,6 +3489,18 @@ input, select, textarea {
 				#header ul > li {
 					display: inline-block;
 				}
+		@media only screen and (max-width: 550px) {
+			#header ul > li{
+				display: none;
+			}
+			#header nav {
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				text-align: center;
+			}
+		}
 
 		#header nav {
 			height: inherit;
